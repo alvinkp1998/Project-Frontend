@@ -11,7 +11,7 @@
               v-for="item in listProgrammer"
               :key="item.id"
             >
-              <list-programmer :nama="item.nama" />
+              <list-programmer :nama="item.nama" :posisi="item.posisi" />
               <!-- <div class="input-group-text" id="list1">
                 <input
                   type="checkbox"
@@ -43,7 +43,7 @@
               v-for="item in listAnalyst"
               :key="item.id"
             >
-              <list-analyst :nama="item.nama" />
+              <list-analyst :nama="item.nama" :posisi="item.posisi" />
             </div>
           </div>
         </div>

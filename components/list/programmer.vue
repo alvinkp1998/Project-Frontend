@@ -18,7 +18,7 @@ export default {
   props: {
     id: Number,
     nama: String,
-    posisi: String
+    posisi: { type: String, default: "kiri" }
   }
 };
 </script>
