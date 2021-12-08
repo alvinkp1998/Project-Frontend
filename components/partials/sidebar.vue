@@ -8,15 +8,15 @@
         <a href="index.html">St</a>
       </div>
       <ul class="sidebar-menu">
-        <li v-for="(menu,i) in listMenu" :key="i">
+        <li v-for="(menu, i) in listMenu" :key="i">
           <nuxt-link class="nav-link" :to="menu.to">
-            <i :class="menu.icon"></i> <span>{{menu.name}} </span>
+            <i :class="menu.icon"></i> <span>{{ menu.name }} </span>
           </nuxt-link>
         </li>
       </ul>
     </aside>
   </div>
-</template> 
+</template>
 
 <script>
 export default {
@@ -26,50 +26,15 @@ export default {
         {
           name: "Dashboard baru",
           icon: "fas fa-home",
-          to: "/",
+          to: "/"
         },
         {
-          name: "Semua Kelas",
+          name: "Skill-test3",
           icon: "fas fa-igloo",
-          to: "/semua-kelas",
-        },
-        {
-          name: "V-Model",
-          icon: "far fa-bookmark",
-          to: "/example/v-model",
-        },
-        {
-          name: "Data Binding",
-          icon: "fas fa-book",
-          to: "/example/data-binding",
-        },
-        {
-          name: "Methods",
-          icon: "fas fa-book",
-          to: "/example/methods",
-        },
-        {
-          name: "Computed",
-          icon: "fas fa-book",
-          to: "/example/computed",
-        },
-        {
-          name: "Watcher",
-          icon: "fas fa-book",
-          to: "/example/watcher",
-        },
-        {
-          name: "Emit",
-          icon: "fas fa-book",
-          to: "/example/emit",
-        },
-        {
-          name: "Sandbox",
-          icon: "fas fa-book",
-          to: "/sandbox/sandbox",
-        },
-      ],
+          to: "/skilltest3"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
